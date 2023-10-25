@@ -10,7 +10,7 @@ dictConfig(
         "version": 1,
         "formatters": {
             "default": {
-                "format": "[%(asctime)s] %(levelname)s in %(module)s: %(message)s"
+                "format": "[%(asctime)s] %(levelname)s in %(module)s: %(message)s",
             }
         },
         "handler": {
@@ -21,8 +21,8 @@ dictConfig(
                 "maxBytes": 1024 * 1024 * 5,
                 "backupCount": 5,
                 "formatter": "default",
-            }
+            },
         },
         "root": {"level": "INFO", "handlers": ["file"]},
-    },
+    }
 )
