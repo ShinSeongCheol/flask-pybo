@@ -13,11 +13,11 @@ dictConfig(
                 "format": "[%(asctime)s] %(levelname)s in %(module)s: %(message)s",
             }
         },
-        "handler": {
+        "handlers": {
             "file": {
                 "level": "INFO",
                 "class": "logging.handlers.RotatingFileHandler",
-                "filename": os.path.join(BASE_DIR, "logs/myproject.log"),
+                "filename": os.path.join(BASE_DIR, "logs/pybo.log"),
                 "maxBytes": 1024 * 1024 * 5,
                 "backupCount": 5,
                 "formatter": "default",
